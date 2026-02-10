@@ -654,49 +654,34 @@ a.nav-link {
    font-weight: bold !important;
 }
 
-
 /* breadcrumb */
 .breadcrumb-wrapper {
    position: relative;
    --bs-breadcrumb-divider: '.';
-   background: url('../images/breadcrumd-bg.png');
+   background: url('../images/cover.png')  !important;
    background-size: cover !important;
    background-position: center center !important;
-   padding-block: 2.5rem;
-
+   height: 75vh;
 }
 
-
 .breadcrumb {
+   height: 100%;
+   background: rgba(9, 22, 39, 0.50);
    position: relative;
    margin: 0;
    font-size: 1.1rem;
-   margin-bottom: 2rem;
+   padding-top: 6rem;
+   /* margin-bottom: 2rem; */
    color: var(--white);
-
-}
-
-.breadcrumb-item+.breadcrumb-item::before {
-   float: inline-start;
-   color: var(--main);
-   font-size: 1.5rem;
-   line-height: .5;
-}
-
-.breadcrumb .breadcrumb-item {
-   font-size: .85rem;
-   font-weight: 500 !important;
-}
-
-.breadcrumb .breadcrumb-item.active {
-   color: var(--main);
-   font-size: .85rem;
-
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .breadcrumb-title {
    font-size: 1.78rem;
    font-weight: 700;
+   text-align: center;
 }
 
 /* --------------- .hero-sec --------------------- */
