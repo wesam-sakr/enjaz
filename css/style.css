@@ -381,6 +381,12 @@ option {
    color: var(--main) !important;
 }
 
+.current .page-link {
+   background: var(--main) !important;
+   color: var(--white) !important;
+}
+
+
 
 .main {
    color: var(--main) !important;
@@ -1043,20 +1049,21 @@ a.nav-link {
 }
 
 /*==-------- partners --------==*/
-.partners .partner-img {
-   /* aspect-ratio: 4 / 4; */
+.partners .card .card-img-top {
    opacity: 0.4;
-   padding: .5rem 2.5rem;
-   height: 100%;
+   border-block: 1px solid #363636;
+   border-inline-end: 1px solid #363636;
+   padding: 1.5rem .75rem;
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.partners .partner-img img {
+.partners .card .card-img-top img {
    object-fit: contain;
+   height: 80px;
+   max-width: 100%;
 }
-
 
 /*==-------- testimonials --------==*/
 .card {
@@ -1469,6 +1476,7 @@ input::placeholder {
 .contact-data .contact-info {
    padding-block: .75rem;
 }
+
 .contact-data .col:not(:last-child) .contact-info {
    border-inline-end: 1px solid rgba(var(--whiteOp), 0.2);
 }
@@ -1494,10 +1502,11 @@ input::placeholder {
    max-width: calc(100% - 3.6rem);
 }
 
-.contact-data .contact-info i+div p:first-child{
+.contact-data .contact-info i+div p:first-child {
    font-weight: 400;
 
 }
+
 .contact-data .contact-info i+div p+* {
    font-size: .8rem;
    font-weight: 500;
