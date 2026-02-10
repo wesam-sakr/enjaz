@@ -755,6 +755,22 @@ a.nav-link {
    font-weight: 400;
 }
 
+.about-section .card .card-img-top img{
+   width: 3.3rem;
+}
+
+.about-section .card .card-desc p ,
+.about-section .about-desc p {
+   color: #999;
+   margin-bottom: .5rem;
+   text-align: start;
+}
+
+.about-section .card .card-desc p {
+   font-size: .9rem;
+}
+
+
 .about_statistics {
    display: flex;
    align-items: center;
@@ -1173,7 +1189,7 @@ a.nav-link {
    color: var(--white);
 }
 
-.projects-title,
+.project-title,
 .blog-title {
    font-weight: 500;
    font-size: 1.25rem;
