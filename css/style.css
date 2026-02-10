@@ -1435,43 +1435,78 @@ input::placeholder {
 
 /*==-------- contact page  --------==*/
 
-
-.contact-data .contact-form {
-   height: 100%;
-   background: var(--dark-gray);
-   border-radius: 18px;
-   padding: 4rem 1.5rem;
-   -webkit-border-radius: 18px;
-   -moz-border-radius: 18px;
-   -ms-border-radius: 18px;
-   -o-border-radius: 18px;
+.contact-us {
+   margin-top: -10%;
 }
 
+.contact-us .card {
+   background: #131F30;
+}
 
-.contact-data form label {
+.contact-us .form-control {
+   background: transparent;
+   border: 1px solid rgba(242, 242, 242, 0.5);
+   color: var(--white);
+   padding: 0.7rem 1rem;
+   border-radius: 0.75rem;
+}
+
+.contact-us .input-group {
+   border: 1px solid rgba(242, 242, 242, 0.75);
+   border-radius: 0.75rem;
+
+}
+
+.contact-us .input-group * {
+   border: unset;
+}
+
+.contact-us label {
    font-weight: 500;
-   font-size: 1.1rem;
    margin-bottom: .8rem !important;
 }
 
-.box_wrapper {
-   border: 1px solid rgba(var(--whiteOp), .08);
-   padding: 2rem 1.5rem;
-   background: var(--dark-bg);
+.contact-data .contact-info {
+   padding-block: .75rem;
+}
+.contact-data .col:not(:last-child) .contact-info {
+   border-inline-end: 1px solid rgba(var(--whiteOp), 0.2);
 }
 
-.if_installment {
-   display: none;
+.contact-data .contact-info i {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* flex-grow: 1; */
+   width: 3.3rem;
+   aspect-ratio: 1/1;
+   border-radius: 50%;
+   background: var(--secondary);
+   box-shadow: inset 0px 10px 5px #00000029;
+   font-size: 1.1rem;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
 }
 
-
-.modal-backdrop {
-   display: none !important;
+.contact-data .contact-info i+div {
+   max-width: calc(100% - 3.6rem);
 }
+
+.contact-data .contact-info i+div p:first-child{
+   font-weight: 400;
+
+}
+.contact-data .contact-info i+div p+* {
+   font-size: .8rem;
+   font-weight: 500;
+   color: rgba(var(--whiteOp), 0.8);
+}
+
 
 
 /* --------------------- media ------------------------- */
-
 @media (max-width: 992px) {
    :root {
       --gutter-x: 1.5rem;
